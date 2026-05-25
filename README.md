@@ -63,7 +63,7 @@ engineer threshold-based custom KQL analytic alert rules to detect and alert on 
 ## Verification & Artifacts
 
   1. KQL Detection Execution Results
-    The screenshot below confirms that the SIEM successfully ingested the endpoint telemetry and that our custom KQL tracking logic
+    The screenshot in the 'Screenshots' folder confirms that the SIEM successfully ingested the endpoint telemetry and that our custom KQL tracking logic
     flawlessly isolated the unauthorized brute force attempts against the FakeAdmin user profile.
 
   2. Live Sentinel Incident Activation Dashboard
