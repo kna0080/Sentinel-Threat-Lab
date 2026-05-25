@@ -44,7 +44,7 @@ engineer threshold-based custom KQL analytic alert rules to detect and alert on 
      ```powershell
      1..15 | ForEach-Object { net use \\127.0.0.1\c$ /user:FakeAdmin WrongPassword$_ 2>$null }
   3. This step generated a spike of consecutive Event ID 4625 (An account failed to log on) security events using non-existent
-     credentials (FakeAdmin).\
+     credentials (FakeAdmin).
      
   ### Phase 3: Ingestion Configuration & Custom KQL Detection Engineering
   1. Deployed the Windows Security Events via AMA connector package through the Microsoft Content Hub.
@@ -62,10 +62,10 @@ engineer threshold-based custom KQL analytic alert rules to detect and alert on 
 
 ## Verification & Artifacts
 
-  1. KQL Detection Execution Results
+  ### KQL Detection Execution Results 
     The screenshot in the 'Screenshots' folder confirms that the SIEM successfully ingested the endpoint telemetry and that our custom KQL tracking logic
     flawlessly isolated the unauthorized brute force attempts against the FakeAdmin user profile.
 
-  2. Live Sentinel Incident Activation Dashboard
+### Live Sentinel Incident Activation Dashboard
     Once the KQL filter logic was mapped into a Scheduled Analytics Alert Rule, re-triggering the attack script successfully forced
     Microsoft Sentinel to parse the database anomalies, declare an operational incident, and route a ticket to the analyst triage queue.
