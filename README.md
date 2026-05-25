@@ -62,10 +62,10 @@ engineer threshold-based custom KQL analytic alert rules to detect and alert on 
 
 ## Verification & Artifacts
 
-  ### KQL Detection Execution Results 
-    The screenshot in the 'Screenshots' folder confirms that the SIEM successfully ingested the endpoint telemetry and that our custom KQL tracking logic
-    flawlessly isolated the unauthorized brute force attempts against the FakeAdmin user profile.
+  1) KQL Detection Execution Results 
+     The screenshot in the 'Screenshots' folder confirms that the SIEM successfully ingested the endpoint telemetry and that our custom KQL tracking logic
+     flawlessly isolated the unauthorized brute force attempts against the FakeAdmin user profile.
 
-### Live Sentinel Incident Activation Dashboard
-    Once the KQL filter logic was mapped into a Scheduled Analytics Alert Rule, re-triggering the attack script successfully forced
-    Microsoft Sentinel to parse the database anomalies, declare an operational incident, and route a ticket to the analyst triage queue.
+  2) Live Sentinel Incident Activation Dashboard
+     Once the KQL filter logic was mapped into a Scheduled Analytics Alert Rule, re-triggering the attack script successfully forced
+     Microsoft Sentinel to parse the database anomalies, declare an operational incident, and route a ticket to the analyst triage queue.
